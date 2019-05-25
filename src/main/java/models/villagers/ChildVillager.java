@@ -5,16 +5,12 @@ public class ChildVillager extends Villager {
     private static final int MAX_ATTACK = 2;
     private static final int MIN_ATTACK = 1;
 
-    private static final int MAX_STAMINA = 4;
-    private static final int MIN_STAMINA = 10;
+    private static final int MAX_STAMINA = 10;
+    private static final int MIN_STAMINA = 4;
 
     private static final int MAX_DEFENSE = 2;
     private static final int MIN_DEFENSE = 1;
 
-
-    public ChildVillager() {
-        super();
-    }
 
     @Override
     public int getMaxAttack() {

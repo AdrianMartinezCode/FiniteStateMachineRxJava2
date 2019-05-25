@@ -2,36 +2,43 @@ package models.villagers;
 
 public class FarmerVillager extends Villager {
 
+    private static final int MAX_ATTACK = 11;
+    private static final int MIN_ATTACK = 6;
 
+    private static final int MAX_STAMINA = 50;
+    private static final int MIN_STAMINA = 20;
+
+    private static final int MAX_DEFENSE = 23;
+    private static final int MIN_DEFENSE = 15;
 
 
     @Override
     public int getMaxAttack() {
-        return 0;
+        return MAX_ATTACK;
     }
 
     @Override
     public int getMinAttack() {
-        return 0;
+        return MIN_ATTACK;
     }
 
     @Override
     public int getMaxDefense() {
-        return 0;
+        return MAX_DEFENSE;
     }
 
     @Override
     public int getMinDefense() {
-        return 0;
+        return MIN_DEFENSE;
     }
 
     @Override
     public int getMaxStamina() {
-        return 0;
+        return MAX_STAMINA;
     }
 
     @Override
     public int getMinStamina() {
-        return 0;
+        return MIN_STAMINA;
     }
 }
