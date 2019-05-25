@@ -8,6 +8,8 @@ import models.families.WarriorFamily;
 import java.util.List;
 import java.util.function.Supplier;
 
+import static utils.Generators.getRandomValueFromRange;
+
 public class WarVillage extends Village {
 
 
@@ -27,18 +29,19 @@ public class WarVillage extends Village {
         super(mixedFamilySupplier, warriorFamilySupplier, peacefulFamilySupplier);
     }
 
+
     @Override
     public int getNumberOfMixedFamilies() {
-        return 0;
+        return getRandomValueFromRange(MAX_MIXED_FAMILIES, MIN_MIXED_FAMILIES);
     }
 
     @Override
     public int getNumberOfWarriorFamilies() {
-        return 0;
+        return getRandomValueFromRange(MAX_WARRIOR_FAMILIES, MIN_WARRIOR_FAMILIES);
     }
 
     @Override
     public int getNumberOfPeacefulFamilies() {
-        return 0;
+        return getRandomValueFromRange(MAX_PEACEFUL_FAMILIES, MIN_PEACEFUL_FAMILIES);
     }
 }
