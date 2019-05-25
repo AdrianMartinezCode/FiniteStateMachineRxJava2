@@ -1,12 +1,11 @@
 package finitestatemachine.states.transitionstates;
 
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.FiniteStateMachineQuestioner;
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.ChangeStateCaller;
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.base.BaseStartState;
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.states.cutstates.StateLoginScreen;
-
 import javax.inject.Inject;
 
+import finitestatemachine.ChangeStateCaller;
+import finitestatemachine.FiniteStateMachineQuestioner;
+import finitestatemachine.base.BaseStartState;
+import finitestatemachine.states.cutstates.StateLoginScreen;
 import io.reactivex.Completable;
 
 public class StateStart extends BaseStartState {

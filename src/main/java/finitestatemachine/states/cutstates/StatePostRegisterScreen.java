@@ -1,11 +1,10 @@
 package finitestatemachine.states.cutstates;
 
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.ChangeStateCaller;
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.CutState;
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.base.BaseCutState;
-
 import javax.inject.Inject;
 
+import finitestatemachine.ChangeStateCaller;
+import finitestatemachine.CutState;
+import finitestatemachine.base.BaseCutState;
 import io.reactivex.Completable;
 
 public class StatePostRegisterScreen extends BaseCutState {

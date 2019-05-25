@@ -1,4 +1,4 @@
-package models.villagers;
+package example.models.villagers;
 
 public class ChildVillager extends Villager {
 

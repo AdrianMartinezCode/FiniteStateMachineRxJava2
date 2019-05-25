@@ -1,9 +1,9 @@
-package models.villages;
+package example.models.villages;
 
-import models.families.MixedFamily;
-import models.families.PeacefulFamily;
-import models.families.UnitFamily;
-import models.families.WarriorFamily;
+import example.models.families.MixedFamily;
+import example.models.families.PeacefulFamily;
+import example.models.families.UnitFamily;
+import example.models.families.WarriorFamily;
 
 import java.util.ArrayList;
 import java.util.List;

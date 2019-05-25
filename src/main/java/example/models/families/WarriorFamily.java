@@ -1,17 +1,16 @@
-package models.families;
+package example.models.families;
 
-import models.villagers.ChildVillager;
-import models.villagers.FarmerVillager;
+import example.models.villagers.ChildVillager;
+import example.models.villagers.WarriorVillager;
 
 import java.util.function.Supplier;
 
-import static utils.Generators.getRandomValueFromRange;
+import static example.utils.Generators.getRandomValueFromRange;
 
-public class PeacefulFamily extends UnitFamily<FarmerVillager, FarmerVillager> {
+public class WarriorFamily extends UnitFamily<WarriorVillager, WarriorVillager> {
 
-    private static final int MAX_CHILDS = 15;
-    private static final int MIN_CHILDS = 3;
-
+    private static final int MAX_CHILDS = 5;
+    private static final int MIN_CHILDS = 0;
 
     /**
      * Only provides a villager method to create a new instance of his.
@@ -22,7 +21,7 @@ public class PeacefulFamily extends UnitFamily<FarmerVillager, FarmerVillager> {
      * @param secondParent
      * @param childVillagerCreator
      */
-    public PeacefulFamily(FarmerVillager firstParent, FarmerVillager secondParent, Supplier<ChildVillager> childVillagerCreator) {
+    public WarriorFamily(WarriorVillager firstParent, WarriorVillager secondParent, Supplier<ChildVillager> childVillagerCreator) {
         super(firstParent, secondParent, childVillagerCreator);
     }
 

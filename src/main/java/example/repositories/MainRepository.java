@@ -1,4 +1,4 @@
-package repositories;
+package example.repositories;
 
 public class MainRepository {
 }

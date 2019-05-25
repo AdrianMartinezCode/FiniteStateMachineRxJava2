@@ -1,15 +1,15 @@
-package models.villagers;
+package example.models.villagers;
 
-public class WarriorVillager extends Villager {
+public class FarmerVillager extends Villager {
 
-    private static final int MAX_ATTACK = 29;
-    private static final int MIN_ATTACK = 25;
+    private static final int MAX_ATTACK = 11;
+    private static final int MIN_ATTACK = 6;
 
-    private static final int MAX_STAMINA = 36;
-    private static final int MIN_STAMINA = 30;
+    private static final int MAX_STAMINA = 50;
+    private static final int MIN_STAMINA = 20;
 
-    private static final int MAX_DEFENSE = 15;
-    private static final int MIN_DEFENSE = 12;
+    private static final int MAX_DEFENSE = 23;
+    private static final int MIN_DEFENSE = 15;
 
 
     @Override

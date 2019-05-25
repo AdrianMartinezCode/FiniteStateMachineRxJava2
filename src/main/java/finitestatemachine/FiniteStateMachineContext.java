@@ -1,13 +1,12 @@
 package finitestatemachine;
 
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.base.BaseCutState;
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.base.BaseStartState;
-import com.example.zonetacts.zonetacts.ui.login.finitestatemachine.base.BaseState;
-
 import java.util.concurrent.atomic.AtomicReference;
 
 import javax.inject.Inject;
 
+import finitestatemachine.base.BaseCutState;
+import finitestatemachine.base.BaseStartState;
+import finitestatemachine.base.BaseState;
 import io.reactivex.Completable;
 
 public class FiniteStateMachineContext implements ChangeStateCaller {

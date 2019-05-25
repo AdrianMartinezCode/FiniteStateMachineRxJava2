@@ -1,6 +1,6 @@
-package models.villagers;
+package example.models.villagers;
 
-import static utils.Generators.getRandomValueFromRange;
+import static example.utils.Generators.getRandomValueFromRange;
 
 public abstract class Villager {
 

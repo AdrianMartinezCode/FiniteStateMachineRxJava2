@@ -1,12 +1,13 @@
-package models.villages;
+package example.models.villages;
 
-import models.families.MixedFamily;
-import models.families.PeacefulFamily;
-import models.families.WarriorFamily;
+import example.models.families.MixedFamily;
+import example.models.families.PeacefulFamily;
+import example.models.families.WarriorFamily;
 
+import javax.inject.Inject;
 import java.util.function.Supplier;
 
-import static utils.Generators.getRandomValueFromRange;
+import static example.utils.Generators.getRandomValueFromRange;
 
 public class PeacefulVillage extends Village {
 
@@ -21,6 +22,7 @@ public class PeacefulVillage extends Village {
     private static final int MIN_PEACEFUL_FAMILIES = 5;
 
 
+    @Inject
     public PeacefulVillage(Supplier<MixedFamily> mixedFamilySupplier,
                               Supplier<WarriorFamily> warriorFamilySupplier,
                               Supplier<PeacefulFamily> peacefulFamilySupplier) {

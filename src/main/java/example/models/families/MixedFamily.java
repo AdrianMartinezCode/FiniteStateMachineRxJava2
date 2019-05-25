@@ -1,12 +1,12 @@
-package models.families;
+package example.models.families;
 
-import models.villagers.ChildVillager;
-import models.villagers.FarmerVillager;
-import models.villagers.WarriorVillager;
+import example.models.villagers.ChildVillager;
+import example.models.villagers.FarmerVillager;
+import example.models.villagers.WarriorVillager;
 
 import java.util.function.Supplier;
 
-import static utils.Generators.getRandomValueFromRange;
+import static example.utils.Generators.getRandomValueFromRange;
 
 public class MixedFamily extends UnitFamily<WarriorVillager, FarmerVillager> {
 

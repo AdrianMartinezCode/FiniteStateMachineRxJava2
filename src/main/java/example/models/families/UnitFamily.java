@@ -1,7 +1,7 @@
-package models.families;
+package example.models.families;
 
-import models.villagers.ChildVillager;
-import models.villagers.Villager;
+import example.models.villagers.ChildVillager;
+import example.models.villagers.Villager;
 
 import java.util.ArrayList;
 import java.util.List;
