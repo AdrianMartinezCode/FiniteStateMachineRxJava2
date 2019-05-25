@@ -1,5 +1,7 @@
 package example.models.villagers;
 
+import javax.inject.Inject;
+
 public class FarmerVillager extends Villager {
 
     private static final int MAX_ATTACK = 11;
@@ -11,6 +13,9 @@ public class FarmerVillager extends Villager {
     private static final int MAX_DEFENSE = 23;
     private static final int MIN_DEFENSE = 15;
 
+    @Inject
+    public FarmerVillager() {
+    }
 
     @Override
     public int getMaxAttack() {

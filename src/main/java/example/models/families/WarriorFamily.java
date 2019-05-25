@@ -3,6 +3,7 @@ package example.models.families;
 import example.models.villagers.ChildVillager;
 import example.models.villagers.WarriorVillager;
 
+import javax.inject.Inject;
 import java.util.function.Supplier;
 
 import static example.utils.Generators.getRandomValueFromRange;
@@ -21,6 +22,7 @@ public class WarriorFamily extends UnitFamily<WarriorVillager, WarriorVillager> 
      * @param secondParent
      * @param childVillagerCreator
      */
+    @Inject
     public WarriorFamily(WarriorVillager firstParent, WarriorVillager secondParent, Supplier<ChildVillager> childVillagerCreator) {
         super(firstParent, secondParent, childVillagerCreator);
     }

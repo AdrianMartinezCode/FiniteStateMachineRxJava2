@@ -3,6 +3,7 @@ package example.models.families;
 import example.models.villagers.ChildVillager;
 import example.models.villagers.FarmerVillager;
 
+import javax.inject.Inject;
 import java.util.function.Supplier;
 
 import static example.utils.Generators.getRandomValueFromRange;
@@ -22,6 +23,7 @@ public class PeacefulFamily extends UnitFamily<FarmerVillager, FarmerVillager> {
      * @param secondParent
      * @param childVillagerCreator
      */
+    @Inject
     public PeacefulFamily(FarmerVillager firstParent, FarmerVillager secondParent, Supplier<ChildVillager> childVillagerCreator) {
         super(firstParent, secondParent, childVillagerCreator);
     }

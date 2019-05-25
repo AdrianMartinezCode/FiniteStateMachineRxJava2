@@ -4,6 +4,7 @@ import example.models.villagers.ChildVillager;
 import example.models.villagers.FarmerVillager;
 import example.models.villagers.WarriorVillager;
 
+import javax.inject.Inject;
 import java.util.function.Supplier;
 
 import static example.utils.Generators.getRandomValueFromRange;
@@ -22,6 +23,7 @@ public class MixedFamily extends UnitFamily<WarriorVillager, FarmerVillager> {
      * @param secondParent
      * @param childVillagerCreator
      */
+    @Inject
     public MixedFamily(WarriorVillager firstParent, FarmerVillager secondParent, Supplier<ChildVillager> childVillagerCreator) {
         super(firstParent, secondParent, childVillagerCreator);
     }
