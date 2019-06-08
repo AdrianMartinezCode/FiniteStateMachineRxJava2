@@ -1,11 +1,9 @@
-package finitestatemachine.states.transitionstates;
-
-import javax.inject.Inject;
+package finitestatemachine.deprecated.states.transitionstates;
 
 import finitestatemachine.ChangeStateCaller;
 import finitestatemachine.FiniteStateMachineQuestioner;
 import finitestatemachine.base.BaseTransitionState;
-import finitestatemachine.states.cutstates.StateListRoomScreen;
+import finitestatemachine.deprecated.states.cutstates.StateListRoomScreen;
 import io.reactivex.Completable;
 
 public class StateCheckValidToken extends BaseTransitionState {
@@ -14,7 +12,7 @@ public class StateCheckValidToken extends BaseTransitionState {
     private StateCheckUserData noValidToken;
     private StateListRoomScreen validToken;
 
-    @Inject
+//    @Inject
     public StateCheckValidToken(FiniteStateMachineQuestioner transitionsActions,
                                 ChangeStateCaller changeStateCaller,
                                 StateCheckUserData noValidToken,

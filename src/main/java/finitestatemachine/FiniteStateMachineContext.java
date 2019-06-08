@@ -15,7 +15,7 @@ public class FiniteStateMachineContext implements ChangeStateCaller {
     private AtomicReference<BaseState> currentState;
     //private BaseStartState startState;
 
-    @Inject
+//    @Inject
     public FiniteStateMachineContext() {
         this.finalState = new AtomicReference<>();
         this.currentState = new AtomicReference<>();

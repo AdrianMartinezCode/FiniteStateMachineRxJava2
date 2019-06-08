@@ -1,4 +1,4 @@
-package finitestatemachine.states.cutstates;
+package finitestatemachine.deprecated.states.cutstates;
 
 
 import javax.inject.Inject;
@@ -13,7 +13,7 @@ public class StateListRoomScreen extends BaseCutState {
     // Callables
     private Completable listRoomScreenAction;
 
-    @Inject
+//    @Inject
     public StateListRoomScreen(ChangeStateCaller changeStateCaller,
                                Completable listRoomScreenAction) {
         super(changeStateCaller);

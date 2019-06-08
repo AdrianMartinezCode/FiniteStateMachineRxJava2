@@ -1,11 +1,9 @@
-package finitestatemachine.states.transitionstates;
-
-import javax.inject.Inject;
+package finitestatemachine.deprecated.states.transitionstates;
 
 import finitestatemachine.ChangeStateCaller;
 import finitestatemachine.FiniteStateMachineQuestioner;
 import finitestatemachine.base.BaseStartState;
-import finitestatemachine.states.cutstates.StateLoginScreen;
+import finitestatemachine.deprecated.states.cutstates.StateLoginScreen;
 import io.reactivex.Completable;
 
 public class StateStart extends BaseStartState {
@@ -16,7 +14,7 @@ public class StateStart extends BaseStartState {
     private StateLoginScreen noHasTokenAndNoHasDataUser;
 
 
-    @Inject
+//    @Inject
     public StateStart(FiniteStateMachineQuestioner transitionsActions,
                       ChangeStateCaller changeStateCaller,
                       StateCheckValidToken hasToken,

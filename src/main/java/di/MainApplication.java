@@ -1,16 +1,21 @@
 package di;
 
-import example.models.villages.Village;
+import example_villageworld.factories.villages.VillageFactory;
 
 import javax.inject.Inject;
-import java.util.List;
+import javax.inject.Singleton;
 
+@Singleton
 public class MainApplication {
+
+    private VillageFactory villageFactory;
+
+
 
 
     @Inject
-    public MainApplication( ) {
-
+    public MainApplication(VillageFactory villageFactory) {
+        this.villageFactory = villageFactory;
     }
 
     public void init() {

@@ -1,4 +1,4 @@
-package finitestatemachine.states.cutstates;
+package finitestatemachine.deprecated.states.cutstates;
 
 import javax.inject.Inject;
 
@@ -12,7 +12,7 @@ public class StatePostRegisterScreen extends BaseCutState {
     // Callables
     private Completable postRegisterScreenAction;
 
-    @Inject
+//    @Inject
     public StatePostRegisterScreen(ChangeStateCaller changeStateCaller,
                                    Completable postRegisterScreenAction) {
         super(changeStateCaller);

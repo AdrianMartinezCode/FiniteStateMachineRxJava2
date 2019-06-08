@@ -1,4 +1,4 @@
-package finitestatemachine.states.cutstates;
+package finitestatemachine.deprecated.states.cutstates;
 
 
 import javax.inject.Inject;
@@ -15,7 +15,7 @@ public class StateLoginScreen extends BaseCutState {
     private Completable loginScreenAction;
 
 
-    @Inject
+//    @Inject
     public StateLoginScreen(ChangeStateCaller changeStateCaller,
                             Completable loginScreenAction) {
         super(changeStateCaller);

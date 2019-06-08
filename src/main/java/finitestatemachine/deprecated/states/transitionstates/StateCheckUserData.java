@@ -1,13 +1,11 @@
-package finitestatemachine.states.transitionstates;
-
-import javax.inject.Inject;
+package finitestatemachine.deprecated.states.transitionstates;
 
 import finitestatemachine.ChangeStateCaller;
 import finitestatemachine.FiniteStateMachineQuestioner;
 import finitestatemachine.base.BaseTransitionState;
-import finitestatemachine.states.cutstates.StateListRoomScreen;
-import finitestatemachine.states.cutstates.StateLoginScreen;
-import finitestatemachine.states.cutstates.StatePostRegisterScreen;
+import finitestatemachine.deprecated.states.cutstates.StateListRoomScreen;
+import finitestatemachine.deprecated.states.cutstates.StateLoginScreen;
+import finitestatemachine.deprecated.states.cutstates.StatePostRegisterScreen;
 import io.reactivex.Completable;
 
 public class StateCheckUserData extends BaseTransitionState {
@@ -17,7 +15,7 @@ public class StateCheckUserData extends BaseTransitionState {
     private StateListRoomScreen requiredRegisterFalse;
     private StateLoginScreen invalidDataUser;
 
-    @Inject
+//    @Inject
     public StateCheckUserData(FiniteStateMachineQuestioner transitionsActions,
                               ChangeStateCaller changeStateCaller,
                               StatePostRegisterScreen requiredRegisterTrue,
