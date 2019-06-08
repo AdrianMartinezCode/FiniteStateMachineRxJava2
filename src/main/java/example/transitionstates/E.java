@@ -12,7 +12,7 @@ import io.reactivex.Single;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-public class E extends BaseTransitionState {
+public class E extends BaseTransitionState<FiniteStateMachineQuestioner> {
 
     private W wState;
 

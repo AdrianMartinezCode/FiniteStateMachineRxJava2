@@ -11,7 +11,7 @@ import io.reactivex.Single;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-public class A extends BaseStartState {
+public class A extends BaseStartState<FiniteStateMachineQuestioner> {
 
     private B bState;
     private C cState;

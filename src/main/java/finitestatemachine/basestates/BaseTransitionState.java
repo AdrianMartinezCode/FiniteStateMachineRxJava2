@@ -6,13 +6,13 @@ import example.questioneers.FiniteStateMachineQuestioner;
 import io.reactivex.Completable;
 import io.reactivex.Single;
 
-public abstract class BaseTransitionState extends BaseState {
+public abstract class BaseTransitionState<T> extends BaseState {
 
     private Completable transitionHandler;
-    private FiniteStateMachineQuestioner questioner;
+    private T questioner;
 
 
-    public BaseTransitionState(FiniteStateMachineQuestioner questioner,
+    public BaseTransitionState(T questioner,
                                ChangeStateCaller changeStateCaller,
                                Completable transitionHandler) {
         super(changeStateCaller);
@@ -20,7 +20,7 @@ public abstract class BaseTransitionState extends BaseState {
         this.questioner = questioner;
     }
 
-    public FiniteStateMachineQuestioner getQuestioner() {
+    public T getQuestioner() {
         return questioner;
     }
 
