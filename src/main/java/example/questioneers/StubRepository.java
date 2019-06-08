@@ -5,12 +5,15 @@ import example.responses.ThreeResponse;
 import example.responses.TwoResponse;
 import io.reactivex.Single;
 
+import javax.inject.Inject;
 import javax.inject.Singleton;
 
 @Singleton
 public class StubRepository implements FiniteStateMachineQuestioner {
 
-
+    @Inject
+    public StubRepository() {
+    }
 
     private static double getRandom() {
         return Math.random();

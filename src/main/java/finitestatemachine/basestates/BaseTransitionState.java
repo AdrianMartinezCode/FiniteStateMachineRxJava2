@@ -4,6 +4,7 @@ package finitestatemachine.basestates;
 import finitestatemachine.ChangeStateCaller;
 import example.questioneers.FiniteStateMachineQuestioner;
 import io.reactivex.Completable;
+import io.reactivex.Single;
 
 public abstract class BaseTransitionState extends BaseState {
 
@@ -25,8 +26,10 @@ public abstract class BaseTransitionState extends BaseState {
 
     @Override
     public Completable handleStateToNext() {
-        return transitionHandler.andThen(handleState());
+        return transitionHandler.andThen(handleState()
+                .flatMapCompletable(state -> getChangeStateCaller().onChangeState(state))
+        );
     }
 
-    protected abstract Completable handleState();
+    protected abstract Single<BaseState> handleState();
 }
