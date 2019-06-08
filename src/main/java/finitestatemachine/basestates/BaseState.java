@@ -1,4 +1,4 @@
-package finitestatemachine.base;
+package finitestatemachine.basestates;
 
 import finitestatemachine.ChangeStateCaller;
 import io.reactivex.Completable;

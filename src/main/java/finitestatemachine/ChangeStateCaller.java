@@ -1,8 +1,8 @@
 package finitestatemachine;
 
 
-import finitestatemachine.base.BaseCutState;
-import finitestatemachine.base.BaseState;
+import finitestatemachine.basestates.BaseCutState;
+import finitestatemachine.basestates.BaseState;
 import io.reactivex.Completable;
 
 public interface ChangeStateCaller {

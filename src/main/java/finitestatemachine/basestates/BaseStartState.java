@@ -1,8 +1,8 @@
-package finitestatemachine.base;
+package finitestatemachine.basestates;
 
 
 import finitestatemachine.ChangeStateCaller;
-import finitestatemachine.FiniteStateMachineQuestioner;
+import example.questioneers.FiniteStateMachineQuestioner;
 import io.reactivex.Completable;
 
 public abstract class BaseStartState extends BaseTransitionState {

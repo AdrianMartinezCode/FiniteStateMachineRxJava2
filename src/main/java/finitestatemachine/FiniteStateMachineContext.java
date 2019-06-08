@@ -2,27 +2,25 @@ package finitestatemachine;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-import javax.inject.Inject;
-
-import finitestatemachine.base.BaseCutState;
-import finitestatemachine.base.BaseStartState;
-import finitestatemachine.base.BaseState;
+import finitestatemachine.basestates.BaseCutState;
+import finitestatemachine.basestates.BaseStartState;
+import finitestatemachine.basestates.BaseState;
 import io.reactivex.Completable;
+
+import javax.inject.Inject;
 
 public class FiniteStateMachineContext implements ChangeStateCaller {
 
     private AtomicReference<BaseCutState> finalState;
     private AtomicReference<BaseState> currentState;
-    //private BaseStartState startState;
 
-//    @Inject
+    @Inject
     public FiniteStateMachineContext() {
         this.finalState = new AtomicReference<>();
         this.currentState = new AtomicReference<>();
     }
 
     public Completable start(BaseStartState startState) {
-//        this.startState = startState;
         return startState.startFiniteStateMachine();
     }
 
