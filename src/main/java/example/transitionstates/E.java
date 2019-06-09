@@ -2,7 +2,6 @@ package example.transitionstates;
 
 import example.cutstates.W;
 import example.questioneers.FiniteStateMachineQuestioner;
-import example.responses.TwoResponse;
 import finitestatemachine.ChangeStateCaller;
 import finitestatemachine.basestates.BaseState;
 import finitestatemachine.basestates.BaseTransitionState;

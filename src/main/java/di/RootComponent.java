@@ -1,16 +1,20 @@
 package di;
 
 import dagger.Component;
-import example_villageworld.models.di.scopes.VillageScope;
-import example_villageworld.models.villagers.di.VillagerComponent;
-import example_villageworld.models.villages.di.VillageComponent;
+import di.scopes.ExampleScope;
+import example.di.ExampleModule;
+import example.di.ExampleProvider;
+import example.main.MainProgramExample;
 
 import javax.inject.Singleton;
 
-@Singleton
-@Component()
+@ExampleScope
+@Component(modules = {
+        ExampleModule.class,
+        ExampleProvider.class,
+})
 public interface RootComponent {
 
-
+    void inject(MainProgramExample mainProgramExample);
 
 }

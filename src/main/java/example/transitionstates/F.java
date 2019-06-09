@@ -3,7 +3,6 @@ package example.transitionstates;
 import example.cutstates.Z;
 import example.questioneers.FiniteStateMachineQuestioner;
 import example.responses.ThreeResponse;
-import example.responses.TwoResponse;
 import finitestatemachine.ChangeStateCaller;
 import finitestatemachine.basestates.BaseState;
 import finitestatemachine.basestates.BaseTransitionState;

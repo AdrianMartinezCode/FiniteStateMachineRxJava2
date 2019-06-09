@@ -7,14 +7,11 @@ import finitestatemachine.basestates.BaseStartState;
 import finitestatemachine.basestates.BaseState;
 import io.reactivex.Completable;
 
-import javax.inject.Inject;
-
 public class FiniteStateMachineContext implements ChangeStateCaller {
 
     private AtomicReference<BaseCutState> finalState;
     private AtomicReference<BaseState> currentState;
 
-    @Inject
     public FiniteStateMachineContext() {
         this.finalState = new AtomicReference<>();
         this.currentState = new AtomicReference<>();

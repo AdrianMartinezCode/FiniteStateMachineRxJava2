@@ -1,5 +1,6 @@
 package example.questioneers;
 
+import di.scopes.ExampleScope;
 import example.responses.OneResponse;
 import example.responses.ThreeResponse;
 import example.responses.TwoResponse;
@@ -8,7 +9,7 @@ import io.reactivex.Single;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
-@Singleton
+@ExampleScope
 public class StubRepository implements FiniteStateMachineQuestioner {
 
     @Inject

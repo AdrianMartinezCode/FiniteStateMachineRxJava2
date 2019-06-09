@@ -1,4 +1,5 @@
 import dagger.internal.DaggerCollections;
+import dagger.internal.codegen.DaggerComponentProcessor_ProcessorComponent;
 
 public class MainProgram {
 
